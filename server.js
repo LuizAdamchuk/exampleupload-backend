@@ -6,6 +6,7 @@ const requireDir = require('require-dir')
 const app = express()
 //Permite que o express entenda a linguagem json
 app.use(express.json())
+//
 app.use(cors())
 
 mongoose.connect("mongodb+srv://adamchuk:adamchuk@cluster0-gfnun.mongodb.net/test?retryWrites=true&w=majority", {
